@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+NZ:wght@100..400&display=swap');
+
+/*Общие стили*/
+body {
+    background-color: #000000; /*Цвет всего сайта*/
+    color: #FFF; /*Цвет слов*/
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none; /*Убирает подчеркивание текста*/
+}
+
+ul li {
+    list-style: none; /*Убирает точки в списке*/
+}
+
+img {
+    max-width: 100%; /*Максимальная ширина картинки*/
+    max-height: 100%; /*Максимальная высота*/
+}
+
+.container {
+    max-width: 1200px; /*Максимальная ширина контейнера*/
+    margin: 0 auto; /*Автоматические отступы по бокам слева и справа*/ 
+    padding: 0 15px; /**/
+}
+
+/*Header*/
+
+#header-section {
+    padding: 40px 0 120px; /*Отступы по бокам верх и низ шапки*/
+}
+
+.header {
+    display: flex; /*Выстраивает элементы в ряд по умолчанию*/
+    justify-content: space-between; /*Вырвнивает элементы по главной оси*/
+    align-items: center; /*Выравнивает элементы по поперечной оси*/
+    font-weight: 600; /**/
+}
+
+.header__logo {
+    width: 48px;
+    height: 48px;
+}
+
+.nav-header {
+    margin-left: auto; /**/
+}
+
+.nav-header__list {
+    display: flex;
+    margin-right: 72px; /**/
+    gap: 48px; /*Растояние между словами*/
+}
+
+.nav-header__btn {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 10px;
+    background-color: #EE8313;
+    transition: opasity 0.5s;
+}
+
+.nav-header__btn:hover {
+    opacity: 0.8;
+}
+
+.nav-header__link {
+    opacity: 0.8;
+}
+
+
+/*Banner*/
+#banner-section {
+    position: relative;
+
+}
+
+.banner {
+    max-width: 475px;
+    padding-top: 45px;
+}
+
+.banner-subtitle {
+    font-size: 52px;
+}
+
+.banner-text {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.banner-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.banner-wrap__btn {
+    background-color: #EE8313;
+    padding: 12px 24px;
+    transition: opasity 0.5s;
+}
+
+.banner-wrap__btn:hover {
+    opacity: 0.8;
+}
+
+.banner__btn {
+    padding: 12px 24px;
+    border: 1px solid #EE8313;
+    background-color: #000000;
+    color: #EE8313;
+    transition: opasity 0.5s;
+}
+
+.banner__btn:hover {
+    opacity: 0.8;
+}
+
+.banner-featrus__text {
+    font-family:  "Playwrite NZ", cursive;
+    font-weight: 600;
+}
+
+.banner-featrus__text__strong {
+    margin-right: 16px;
+    font-size: 40px;
+    vertical-align: sub;
+}
+
+.banner-featrus__text:first-child {
+    margin-right: 40px;
+}
+
+.banner__img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+
+/*Rent*/
+
+#rent-section {
+    padding: 120px 60px;
+}
+
+.rent-subtitle {
+    font-size: 52px;
+    text-align: center;
+}
+
+.rent-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+/*Свойства,чтобы сделать каринку фоном для названия и кнопки*/
+
+#rent-section {
+    padding: 120px 0;
+}
+
+.rent {
+    position: relative;
+    height: 534px;
+    font-weight: 600;
+    background: url(./img/rent/car1.png) 50%/cover no-repeat;
+}
+
+.rent:nth-child(2) {
+    background-image: url(./img/rent/car2.png);
+}
+
+.rent:nth-child(3) {
+    background-image: url(./img/rent/car3.png);
+}
+
+.rent:nth-child(4) {
+    background-image: url(./img/rent/car4.png);
+}
+
+/*Свойства,чтобы сделать надпись в картинке,с отступами*/
+
+.rent__name {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 600;
+    top: 48px;
+    left: 48px;
+}
+
+/*Свойства,чтобы сделать кнопку в картинке сотступами*/
+
+.rent__link {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 500;
+    bottom: 48px;
+    right: 90px;
+
+    
+}
+
+.rent__link:hover{
+    color: #EE8313;
+}
+
+
+/*Свойства,чтобы сделать стрелочку возле кнопки*/
+
+
+
+
+/*Servis*/
+
+#servis-section {
+    padding-bottom: 120px;/*Внутренний отступ */
+}
+
+.sservis-section__title {
+    text-align: left;
+    margin-bottom: 66px;
+    font-size: 52px;
+}
+
+/*Свойства,чтобы поставить элементы в ряд*/
+
+.servis-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.servis__subtitle {
+    font-size: 24px;
+}
+
+.servis__tex {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    opacity: 0,8;
+}
+
+
+
+/*Popular*/
+#popular {
+    padding-bottom: 162px;
+}
+
+.popular-section__subtitle {
+    text-align: center;
+    font-size: 52px;
+}
+
+.popula-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.popular {
+    border: 1px solid #171717;
+    background: #131313;
+    width: 384px;
+    height: 472px;
+}
+
+.popular__sutitle {
+    font-size: 24px;
+    margin-left: 24px;
+}
+
+.popular__title {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 24px;
+    opacity: 0.8;
+}
+
+.popula-span {
+    margin-left: 24px;
+}
+
+.popular__text b {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 12px;
+    position: relative;
+    top: -5px;
+}
+
+.popular__btn {
+    font-size: 16px;
+    font-weight: 400;
+    color: #EE8313;
+    margin-left: 24px;
+    transition: opasity 0.5s;
+}
+
+.popular__btn:hover {
+    opacity: 0.8;
+}
+
+
+
+/*Location*/
+.location__subtitle {
+    text-align: center;
+    font-size: 52px;
+}
+
+.location__img {
+    width: 1200px;
+    height: 524px;
+}
+
+
+/*Footer*/
+#footer-section {
+    padding: 40px;
+    background: #1F1905;
+    margin-top: 120px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer a {
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+
+.footer-wrap__logo {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 64px;
+}
+
+
+.footer-abot__title {
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    width: 235px;
+}
+
+
+
+.footer-nav__list {
+    display: flex;
+    gap: 160px;
+}
+
+
+
+.footer .footer-title {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 18px;
+    opacity: 1;
+}
+
+
+.inner__link {
+    margin-left: -38px;
+    margin-top: 28px;
+    
+}
+
+
+.footer-copyright {
+    padding: 20px 0;
+    background-color: #EE8313;
+}
+
+
+
+.footer-copyright__text {
+    text-align: center;
+    font-weight: 400;
+}
